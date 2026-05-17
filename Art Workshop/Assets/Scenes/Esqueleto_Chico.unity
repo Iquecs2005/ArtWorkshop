@@ -437,6 +437,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4543960037168036937, guid: cc890f7094054da42bb70799371e663c, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 7939190966967724415}
+    - target: {fileID: 4543960037168036937, guid: cc890f7094054da42bb70799371e663c, type: 3}
+      propertyPath: onShootTrigger
+      value: shootTrigger
+      objectReference: {fileID: 0}
     - target: {fileID: 5763630128088178570, guid: cc890f7094054da42bb70799371e663c, type: 3}
       propertyPath: m_Name
       value: Chico
@@ -444,13 +452,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4074103885171604642, guid: cc890f7094054da42bb70799371e663c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7939190966967724415}
   m_SourcePrefab: {fileID: 100100000, guid: cc890f7094054da42bb70799371e663c, type: 3}
 --- !u!4 &7939190966967724413 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 189536997567759812, guid: cc890f7094054da42bb70799371e663c, type: 3}
   m_PrefabInstance: {fileID: 7939190966967724412}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7939190966967724414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4074103885171604642, guid: cc890f7094054da42bb70799371e663c, type: 3}
+  m_PrefabInstance: {fileID: 7939190966967724412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7939190966967724415
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7939190966967724414}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2732a71a69d0a064face593d41109e0b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &8770620829356897874
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -469,11 +506,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8457395842578729834, guid: 7e1deb63eed04864381f69bbc1d941f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.99
+      value: 7.01
       objectReference: {fileID: 0}
     - target: {fileID: 8457395842578729834, guid: 7e1deb63eed04864381f69bbc1d941f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8457395842578729834, guid: 7e1deb63eed04864381f69bbc1d941f7, type: 3}
       propertyPath: m_LocalPosition.z
