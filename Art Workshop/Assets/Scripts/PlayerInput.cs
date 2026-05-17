@@ -10,6 +10,8 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private UnityEvent<Vector2> OnShootInput;
     [SerializeField] private UnityEvent OnShootCanceledInput;
 
+    private bool shootState = false;
+
     public void OnMove(InputAction.CallbackContext moveInput)
     {
         //Pega o input do player e passa pro script principal
@@ -19,19 +21,19 @@ public class PlayerInput : MonoBehaviour
 
     public void OnShoot(InputAction.CallbackContext shootInput)
     {
-        if (shootInput.canceled)
-        {
-            OnShootCanceledInput.Invoke();
-            return;
-        }
-
         Vector2 shootVector = shootInput.ReadValue<Vector2>();
         float xComponent = shootVector.x;
         float yComponent = shootVector.y;
 
         if (Mathf.Abs(xComponent) > 0.5f || Mathf.Abs(yComponent) > 0.5f)
         {
+            shootState = true;
             OnShootInput.Invoke(shootVector);
+        }
+        else if (shootState)
+        {
+            shootState = false;
+            OnShootCanceledInput.Invoke();
         }
     }
 

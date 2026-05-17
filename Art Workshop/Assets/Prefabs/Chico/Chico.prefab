@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 189536997567759812}
   - component: {fileID: 593844761070493483}
   - component: {fileID: 8866287847192438610}
+  - component: {fileID: 5475926889596016482}
   - component: {fileID: 3353506590513672836}
   - component: {fileID: 6330469293469801430}
   - component: {fileID: 4962457933687247039}
+  - component: {fileID: 4543960037168036937}
   - component: {fileID: 5449998936188648481}
   - component: {fileID: 911149386911391241}
   m_Layer: 0
@@ -116,7 +118,52 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!61 &5475926889596016482
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5763630128088178570}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!114 &3353506590513672836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,6 +213,32 @@ MonoBehaviour:
   spellDestructionTime: 5
   spellKnockback: 1
   spellRate: 2
+  allDirections: 0
+  OnShoot:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4543960037168036937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5763630128088178570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112dfe938446b0347a49814e7bf2db43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 3353506590513672836}
+  anim: {fileID: 0}
+  speedXVariableName: speed_x
+  speedYVariableName: speed_y
+  shootInputXVariableName: shootInput_x
+  shootInputYVariableName: shootInput_y
+  moveInputXVariableName: moveInput_x
+  moveInputYVariableName: moveInput_y
+  onShootCancelTrigger: shootCancelTrigger
+  onShootTrigger: shootCancelTrigger
 --- !u!114 &5449998936188648481
 MonoBehaviour:
   m_ObjectHideFlags: 0
