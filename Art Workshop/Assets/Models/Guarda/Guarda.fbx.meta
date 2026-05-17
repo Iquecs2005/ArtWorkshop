@@ -3,7 +3,17 @@ guid: b8d85db0ac8448248bb08b785e36da86
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 594549dcf0456d848aac0c884859af3f, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GuardText
+    second: {fileID: 2800000, guid: 3dfdbd77caf0d8640be0ae78632c1317, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
