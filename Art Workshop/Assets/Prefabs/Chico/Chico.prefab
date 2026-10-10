@@ -292,7 +292,7 @@ MonoBehaviour:
   moveInputXVariableName: moveInput_x
   moveInputYVariableName: moveInput_y
   onShootCancelTrigger: shootCancelTrigger
-  onShootTrigger: shootCancelTrigger
+  onShootTrigger: shootTrigger
 --- !u!114 &5449998936188648481
 MonoBehaviour:
   m_ObjectHideFlags: 0
